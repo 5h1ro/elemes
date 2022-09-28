@@ -13,7 +13,7 @@ class DashboardController extends Controller
     {
         $user = User::where('role', 2)->count();
         $course = Course::count();
-        $freeCourse = Course::where('status', 'Gratis')->count();
+        $freeCourse = Course::where('status', 1)->count();
         return response()->json([
             'success' => true,
             'message' => 'Data berhasil didapatkan',
