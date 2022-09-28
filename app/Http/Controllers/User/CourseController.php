@@ -48,7 +48,6 @@ class CourseController extends Controller
         $data = Course::find($id);
         if ($data) {
             $data->price = 'Rp. ' . number_format($data->price, 0, ',', '.');
-            $data->sell = 0;
             $data->category = $data->category->name;
             return response()->json([
                 'success' => true,
