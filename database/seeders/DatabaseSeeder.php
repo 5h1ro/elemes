@@ -30,18 +30,18 @@ class DatabaseSeeder extends Seeder
         Course::factory(2)->state(new Sequence(
             ['name' => 'NestJs'],
             ['name' => 'Golang'],
-        ))->category('backend')->create();
+        ))->category('Backend')->create();
 
         Course::factory(3)->state(new Sequence(
             ['name' => 'ReactJs'],
             ['name' => 'Vue'],
             ['name' => 'Ionic'],
-        ))->category('frontend')->create();
+        ))->category('Frontend')->create();
 
         Course::factory(2)->state(new Sequence(
             ['name' => 'Flutter'],
             ['name' => 'React Native'],
-        ))->category('mobile')->create();
+        ))->category('Mobile')->create();
 
         Course::factory(2)->state(new Sequence(
             ['name' => 'Figma'],
